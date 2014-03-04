@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UI Cart Demo</title>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header left">
+            <a class="navbar-brand" href="index.html">UI Cart</a>
+        </div>
+        <div class="navbar-collapse collapse right">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cart <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li id="cart-items-list" class="cart-items-list w200"><span class="cart-item">Cart is empty.</span></li>
+                        <li><a href="checkout.html" class="btn btn-default">Checkout</a></li>
+                    </ul>
+                </li>
+                <li id="login" class="dropdown dNone">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="userLogin">Login <b class="caret"></b></a>
+                    <ul class="dropdown-menu p10 w200">
+                        <li id="loginForm">
+                            <form class="well">
+                                <input type="text" placeholder="User Name" id="username" class="form-control" />
+                                <input type="password" placeholder="Password" id="password" class="form-control" />
+                                <button class="btn btn-default" id="submitLogin">Submit</button>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+                <li id="loginUser" class="dNone">Welcome
+                    <span></span>
+                    <a href="#" id="userLogout" class="left">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container" data-role="main">
+
+    <div class="row">
+        <div class="col-xs-6 col-md-4 thumbnail">
+            <a href="#" class="thumbnail"><img data-src="holder.js/100%x180" alt="Item 1"></a>
+            <div class="add right btn btn-default btn-sm right" data-number="12345" data-name="Item Name 12345">Add</div>
+            <select class="right m5">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="col-xs-6 col-md-4 thumbnail">
+            <a href="#" class="thumbnail"><img data-src="holder.js/100%x180" alt="Item 2"></a>
+            <div class="add right btn btn-default btn-sm right" data-number="67890" data-name="Item Name 67890">Add</div>
+            <select class="right m5">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="col-xs-6 col-md-4 thumbnail">
+            <a href="#" class="thumbnail"><img data-src="holder.js/100%x180" alt="Item 3"></a>
+            <div class="add right btn btn-default btn-sm right" data-number="00000" data-name="Item Name 00000">Add</div>
+            <select class="right m5">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6 col-md-4 thumbnail">
+            <a href="#" class="thumbnail"><img data-src="holder.js/100%x180" alt="Item 4"></a>
+            <div class="add right btn btn-default btn-sm right" data-number="11111" data-name="Item Name 11111">Add</div>
+            <select class="right m5">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="col-xs-6 col-md-4 thumbnail">
+            <a href="#" class="thumbnail"><img data-src="holder.js/100%x180" alt="Item 5"></a>
+            <div class="add right btn btn-default btn-sm right" data-number="22222" data-name="Item Name 22222">Add</div>
+            <select class="right m5">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="col-xs-6 col-md-4 thumbnail">
+            <a href="#" class="thumbnail"><img data-src="holder.js/100%x180" alt="Item 6"></a>
+            <div class="add right btn btn-default btn-sm right" data-number="33333" data-name="Item Name 33333">Add</div>
+            <select class="right m5">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+    </div>
+
+</div>
+
+<div id="test" class="m5">Console current storage</div>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<script src="js/ui-cart.js"></script>
+
+
+</body>
+</html>

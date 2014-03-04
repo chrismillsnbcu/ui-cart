@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UI Cart Demo</title>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header left">
+            <a class="navbar-brand" href="index.html">UI Cart</a>
+        </div>
+        <div class="navbar-collapse collapse right">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cart <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li id="cart-items-list" class="cart-items-list w200"><span class="cart-item">Cart is empty.</span></li>
+                        <li><a href="checkout.html" class="btn btn-default">Checkout</a></li>
+                    </ul>
+                </li>
+                <li id="login" class="dropdown dNone">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="userLogin">Login <b class="caret"></b></a>
+                    <ul class="dropdown-menu p10 w200">
+                        <li id="loginForm">
+                            <form class="well">
+                                <input type="text" placeholder="User Name" id="username" class="form-control" />
+                                <input type="password" placeholder="Password" id="password" class="form-control" />
+                                <button class="btn btn-default" id="submitLogin">Submit</button>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+                <li id="loginUser" class="dNone">Welcome
+                    <span></span>
+                    <a href="#" id="userLogout" class="left">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container" data-role="main">
+
+   <table id="cartItems" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <th width="70%" align="left">Cart Item</th>
+        <th width="15%" align="right">Item Number</th>
+        <th width="15%" align="right">Quantity</th>
+    </tr>
+    <tbody class="cart-items-list"></tbody>
+   </table>
+
+</div>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<script src="js/ui-cart.js"></script>
+
+</body>
+</html>
